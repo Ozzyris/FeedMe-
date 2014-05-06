@@ -31,30 +31,8 @@ $( document ).ready(function() {
 		win.reload();
 	});
 
-	$.ajax( {
-            type: "GET",
-            url: "http://feeds.feedburner.com/crunchgear",
-            dataType: "xml",
-            success: function(xml){
-                       $(xml).find('item').each(function(){
-                            var title = $(this).find('title').text();
-                            var reducetitle = title.slice(0,40) + ' ...';
-                            var url = $(this).find('url').text();
-                            var thumbnail = 'http://placekitten.com/300/200';
-                            $('<div></div>').html('<a data-url="http://google.com" class="thumbnail"><span class="glyphicon glyphicon-remove removeRss"></span><img src="' + thumbnail + '" /> <p>' + reducetitle + '</p></a>').appendTo('#contentRss');
-                      });
-        	}
-    });
-
-$('#thumbnail').click(function(){
-	var lien = $(this).data('url');
-	gui.Shell.openExternal(lien);
-	alert(lien);
-});
-
-
-	$('#btnTwitter').tab('show');
-	$('#btnGoogle').tab('show');
-	 $('#btnRss').tab('show');
+	$('#btnTab3').tab('show');
+	$('#btnTab2').tab('show');
+	$('#btnTab1').tab('show');
 
 });
