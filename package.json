@@ -1,0 +1,11 @@
+{
+	"name" : "FeedMe!",
+	"main" : "content/index.html",
+	"window" : {
+		"toolbar" : false,
+		"height"  : 600,
+		"width"   : 950,
+		"frame"   : false,
+		"icon": "content/img/icone.png"
+	}
+}

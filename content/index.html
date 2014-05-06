@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedMe!</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="toolbar">
+      <div id="close"></div>
+      <div id="reduce"></div>
+      <div id="maximise"></div>
+      <p>FEED ME !</p>
+      <span class="glyphicon glyphicon-repeat" id="reload"></span>
+      <span class="glyphicon glyphicon-cog" id="parametre"></span>
+    </div>
+    <div id="leftbar">
+      <ul>
+        <li id="btnRss" data-target="#contentRss" data-toggle="tab"><p>RSS</p><span class="badge">16</span></li>
+        <li id="btnTwitter" data-target="#contentTwitter" data-toggle="tab"><p>Twitter</p></li>
+        <li id="btnGoogle" data-target="#contentGoogle" data-toggle="tab"><p>Google</p></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane content" id="contentGoogle"><span style="color:#F2F2F2; font-size:20px; position: absolute; top:35%; left:40%;">Hello Google</span></div>
+      <div class="tab-pane content" id="contentTwitter"><span style="color:#F2F2F2; font-size:20px; position: absolute; top:35%; left:40%;">Hello Twitter</span></div>
+      <div class="tab-pane content" id="contentRss"></div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
