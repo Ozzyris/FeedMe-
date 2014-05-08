@@ -28,6 +28,7 @@ $( document ).ready(function() {
 	});
 
 	$('#reload').click(function(){
+		$('#reload').addClass( "ReloadAnimation");
 		win.reload();
 	});
 
@@ -37,6 +38,7 @@ $( document ).ready(function() {
             dataType: "xml",
             success: function(xml){
                        $(xml).find('item').each(function(){
+                       		$('#HelloRss').hide();
                             var title = $(this).find('title').text();
                             var reducetitle = title.slice(0,40) + ' ...';
                             var url = $(this).find('url').text();
@@ -55,6 +57,6 @@ $('#thumbnail').click(function(){
 
 	$('#btnTwitter').tab('show');
 	$('#btnGoogle').tab('show');
-	 $('#btnRss').tab('show');
+	$('#btnRss').tab('show');
 
 });

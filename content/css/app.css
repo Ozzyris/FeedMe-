@@ -47,6 +47,7 @@
 	font-size:14px;
 	color:#262626;
 	cursor:pointer;
+	-webkit-font-smoothing: antialiased;
 }
 
 #parametre:hover{
@@ -61,11 +62,20 @@
 	font-size:12px;
 	color:#262626;
 	cursor:pointer;
+	-webkit-font-smoothing: antialiased;
 }
 
 #reload:hover{
 	color:#ED5565;
 }
+
+    .ReloadAnimation{
+    -webkit-animation: reloadAniamtion 1s linear;
+    } 
+  
+    @-webkit-keyframes reloadAniamtion{
+        100%{ -webkit-transform: rotate(360deg) }
+    }
 
 
 #toolbar p{
