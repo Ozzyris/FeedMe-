@@ -166,16 +166,20 @@ margin:0; padding:0;
 	-webkit-font-smoothing: antialiased;
 }
 
-#leftbar ul li:hover{
-	background-color: #4FC1E9;
-}
-
-#leftbar ul li:first-child:hover{
+#btnRss:hover{
 	background-color: #E9573F;
 }
 
-#leftbar ul li:last-child:hover{
+#btnTwitter:hover{
+	background-color: #4FC1E9;
+}
+
+#btnGoogle:hover{
 	background-color: #4A89DC;
+}
+
+#btnTodolist:hover{
+	background-color: #F6BB42;
 }
 
 .content{
